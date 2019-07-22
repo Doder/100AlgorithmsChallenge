@@ -1,5 +1,5 @@
 function alphabetSubsequence(s: string): boolean {
-
+    return !!s.split('').reduce((prev, curr) => prev && (prev.charCodeAt(0) < curr.charCodeAt(0)) ? curr : '');
 }
 
 console.log(alphabetSubsequence('zab'))
